@@ -12,7 +12,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 echo "==>> BRANCH_NAME: ${branchName}"
-                git branch: "${branchName}", credentialsId: "${CREDENTIAL_ID}", url: 'https://github.com/uno-solucoes/unoerp-api.git'
+                git branch: "${branchName}", credentialsId: "${CREDENTIAL_ID}", url: 'https://github.com/llaurenti/test-ci'
             }
         }
         stage('Login Aplicacao API') {
